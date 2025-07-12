@@ -28,7 +28,7 @@ const swaggerOptions = {
         },
         servers: [
             {
-                url: `https://hserverceriamusic-production.up.railway.app`,
+                url: `http://31.97.110.107:${port}/api`,
                 description: 'Development server'
             }
         ],
@@ -205,6 +205,6 @@ cron.schedule('* * * * *', async () => { // Cron berjalan setiap menit
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on https://serverceriamusic-production.up.railway.app`);
-    console.log(`Swagger documentation available at http://localhost:${port}/docs`);
+    console.log(`Server is running on http:31.97.110.107:${port}`);
+    console.log(`Swagger documentation available at http://31.97.110.107:${port}/docs`);
 });
