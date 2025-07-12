@@ -13,12 +13,7 @@ const path = require('path');
 
 const app = express();
 
-app.use(cors(
-    {
-        origin: 'https://fe-ceria-musix.vercel.app/',
-        credentials: true
-    }
-));
+app.use(cors());
 app.use(express.json()); 
 
 connectDB();
